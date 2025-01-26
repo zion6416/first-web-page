@@ -1,0 +1,283 @@
+/* classes idenifies using .mark and id idenifing #mark */
+
+#logoImage {
+  /* logo image width and height edge curves */
+  width: 50px;
+  height: 50px;
+  border-radius: 2px;
+}
+
+body {
+  /* in this section whole website body has 0 margins  */
+  margin: 0;
+  padding: 8px;
+  background-color: #022429;
+  color: wheat;
+  font-family: "Inter";
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto";
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#navBar {
+  width: 100%;
+  height: 50px;
+  background-color: #02161a;
+  display: flex;
+  text-align: center;
+  border: 1px solid grey;
+}
+
+#homeImage {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+#homeImageDiv {
+  margin: 10px auto 0 auto;
+  max-width: 800px;
+}
+
+#aboutTitle {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+#aboutPara {
+  font-size: 17px;
+  padding: 0 5px 0 0;
+  margin: 0;
+}
+
+#aboutImage {
+  width: 100%;
+  padding-left: 5px;
+  border-radius: 15px;
+  opacity: 0.8;
+}
+
+#aboutDescriptionDiv {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-right: 8px;
+}
+
+a {
+  text-decoration: none;
+  color: yellowgreen;
+  font-size: 17px;
+}
+
+li {
+  list-style: none;
+}
+
+#jobInfoMainDiv {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-right: 8px;
+}
+
+.jobDetails {
+  font-size: 17px;
+  padding: 0 5px 0 0;
+  margin-top: 0;
+  margin-left: 10px;
+}
+
+#teamImage {
+  width: 100%;
+  /* padding-left: 8px; */
+  border-radius: 15px;
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+#jobInfo {
+  font-size: 17px;
+  padding: 0 5px 0 0;
+  margin: 0;
+}
+
+.jobTitle {
+  margin: 0;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+.location {
+  margin: 0;
+  color: gray;
+  padding-bottom: 5px;
+}
+
+#jobOppTitle {
+  font-size: 40px;
+  text-align: center;
+
+  color: white;
+}
+
+#footerDiv li {
+  display: inline;
+  margin: 0 16px;
+}
+
+#footerArea {
+  background-color: #02161a;
+  padding: 8px;
+  margin-top: 32px;
+}
+
+#footerLinks {
+  list-style: none;
+  text-align: center;
+}
+
+#copyright {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 5px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#jobsTable {
+  width: 100%;
+  border: 1px solid grey;
+  border-collapse: collapse;
+}
+
+.jobsHeaderRow th {
+  border: 1px solid grey;
+  padding: 8px;
+  background-color: #02161a;
+  font-size: 15px;
+  text-align: center;
+}
+
+.jobsDataRow td {
+  border: 1px solid grey;
+  font-size: 15px;
+  text-align: center;
+}
+
+#jobsTable tr:nth-child(even) {
+  background-color: #02161a;
+}
+
+#jobsTableDiv {
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+}
+
+#applicationTitle {
+  font-size: 40px;
+  color: white;
+}
+
+#application {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+#applicationForm input {
+  padding: 5px 10px;
+  font-size: 15px;
+  margin: 5px 0 5px 0;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+select {
+  font-size: 20px;
+}
+
+.formGroup {
+  padding: 5px 0 5px 0;
+}
+
+#select {
+  margin-top: 5px;
+}
+
+#gap {
+  height: 5px;
+}
+
+#coverletter {
+  width: 100%;
+  font-size: 15px;
+  font-family: "Roboto";
+  margin-top: 8px;
+  padding: 8px 8px;
+  background-color: #02161a;
+  color: white;
+}
+
+#terms {
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+#termscheckbox {
+  width: 15px;
+  height: 15px;
+}
+
+input {
+  background-color: #02161a;
+  border: grey;
+  color: white;
+  width: 100%;
+  height: 25px;
+}
+
+#flexInputs {
+  display: flex;
+  align-items: center;
+  gap: 50%;
+}
+
+#dob {
+  width: 100%;
+  text-transform: uppercase;
+}
+
+#submit {
+  height: 40px;
+  font-size: 40px;
+  font-weight: bold;
+  color: yellowgreen;
+  font-family: "Inter";
+}
+
+#jobSelector {
+  height: 30px;
+  background-color: #02161a;
+  color: white;
+}
+
+#submit:hover {
+  background-color: greenyellow;
+  color: black;
+  font-weight: 800;
+}

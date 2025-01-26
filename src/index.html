@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+    <!-- -------------------------------------------------------------------------------->
+    <!-- This is the website title -->
+    <title>My First Website</title>
+    <!-- link the external style sheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- link the google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- create the navigation bar -->
+    <!-- create the main div for the nav bar -->
+
+
+    <div id="navBar">
+
+        <!-- this is the logo image adding the nav bar -->
+
+        <img src="logoImage.png" alt="logoImage" id="logoImage">
+
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------- -->
+    <!-- adding the main image for the web page. create a div for it -->
+
+    <div id="homeImageDiv">'
+
+        <!-- adding main image  -->
+        <img src="homeImage.jpeg" alt="homeImage" id="homeImage">
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------- -->
+    <!-- create div for the about zion web solution title -->
+
+    <div id="aboutTitleDiv">
+        <h2 id="aboutTitle">About Zion Web Solutions</h2>
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------- -->
+    <!-- create div for adding about the service and image -->
+
+    <div id="aboutDescriptionDiv">
+
+        <!-- create a div for adding about information -->
+        <div>
+            <p id="aboutPara">
+                At Zion Web Solution, we craft innovative web solutions tailored to your business needs. From modern web
+                development to custom software, we deliver seamless, scalable, and user-friendly digital experiences to
+                help
+                you thrive in the digital age.
+                <br>
+                <br>
+                Start your web development journey with Zion Web Solution! We’re excited to offer two free courses to
+                help
+                you build the skills you need to thrive in the digital world:
+
+            <ol>
+                <li>
+                    <!-- anchor tag using for the hyperlinks and target attribute use for the link opening method customizing -->
+                    <a href="https://www.udemy.com" target="_blank">Web Development Basics</a>
+                </li>
+                <br>
+                <li>
+                    <a href="https://www.udemy.com" target="_blank">Responsive Design Mastery</a>
+                </li>
+            </ol>
+            </p>
+        </div>
+
+
+        <!-- create a div for the image -->
+        <div id="aboutImageDiv">
+            <img src="aboutImage.jpg" alt="aboutImage" id="aboutImage">
+
+        </div>
+
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------- -->
+
+
+    <!-- create a div for the job opportunities title -->
+    <div id="jobOppTitleDiv">
+        <h2 id="jobOppTitle">
+            Job Opportunities
+        </h2>
+    </div>
+    <!-- ---------------------------------------------------------------------------------- -->
+    <!-- create a div for the job info table -->
+    <div id="jobsTableDiv">
+        <!-- create a table -->
+        <table id="jobsTable">
+            <tr class="jobsHeaderRow">
+                <!-- colspan and rowspan using for the merging colums and rows -->
+                <th rowspan="2">Job Title</th>
+                <th colspan="2">Location</th>
+                <th rowspan="2">Salary</th>
+                <th rowspan="2">Posted On</th>
+            </tr>
+            <tr class="jobsHeaderRow">
+
+                <th>City</th>
+                <th>Country</th>
+
+            </tr>
+            <tr class="jobsDataRow">
+                <td>Frontend Developer</td>
+                <td>Bengaluru</td>
+                <td>India</td>
+                <td>$12 000</td>
+                <td>Mar 3, 2023</td>
+            </tr>
+            <tr class="jobsDataRow">
+                <td> Full Stack Developer</td>
+                <td>New Delhi</td>
+                <td>India</td>
+                <td>$15 000</td>
+                <td>Feb 1, 2023</td>
+            </tr>
+            <tr class="jobsDataRow">
+                <td>Data Scientist</td>
+                <td>San Fransisco</td>
+                <td>USA</td>
+                <td>$175 000</td>
+                <td>Dec 22, 2022</td>
+            </tr>
+            <tr class="jobsDataRow">
+                <td> Machine Learning Engineer</td>
+                <td colspan="2">Remote</td>
+                <td> $80 000</td>
+                <td>Sep 19, 2022</td>
+            </tr>
+
+        </table>
+    </div>
+
+    <!-- ------------------------------------------------------------------------------ -->
+    <!-- create div for the team image -->
+    <div id="jobInfoMainDiv">
+
+        <img src="teamImage.jpg" alt="teamImage" id="teamImage">
+
+    </div>
+    <!-- ---------------------------------------------------------------------------------- -->
+    <br>
+    <br>
+
+    <!-- create the submit application title -->
+    <div id="application">
+        <h2 id="applicationTitle">Submit your Application</h2>
+
+        <!-- create form for the submit details -->
+
+        <form action="https://formbold.com/s/6Q54n" id="applicationForm" method="post" enctype="multipart/form-data">
+            <div class="formGroup">
+                <label for="name">Full Name</label><br>
+                <!-- using required keyword for the mandotory fields of application and placeholder using for the hidden text in the input fields -->
+                <input type="text" id="name" name="Full Name" required placeholder="Full Name">
+            </div>
+            <div class="formGroup">
+                <label for="email">Email</label>
+                <br>
+                <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+            </div>
+            <div class="formGroup">
+                <label for="phone">Phone</label><br>
+                <input type="tel" required placeholder="+94 77 123 4567" name="phone">
+            </div>
+
+            <div id="flexInputs">
+
+                <div class="formGroup">
+                    <label for="dateOfBirth">Date of Birth</label><br>
+                    <input type="date" name="dob" id="dob" required>
+                </div>
+
+                <div class="formGroup">
+                    <label for="position" style="margin-bottom: 5px;">Position Applied for</label><br>
+                    <div id="gap"></div>
+                    <!-- this select tag using for the create drop down list -->
+                    <select name="jobPositions" id="jobSelector" required>
+                        <!-- option tag using for the adding options into the drop down list -->
+                        <option value="">Select Option</option>
+                        <option value="frontend">Frontend Developer</option>
+                        <option value="datascientist">Data Scientist</option>
+                        <option value="fullstack">Fullstack Developer</option>
+                        <option value="mlEngineer">Machine Learning Engineer</option>
+                    </select>
+                </div>
+            </div>
+            <div class="formGroup">
+                <label for="resume">Upload Resume</label>
+                <br>
+                <!-- accept attribute using for the compatible file types introducing the application form -->
+                <input type="file" name="resume" id="resume" accept=".pdf, .doc, .docx" required>
+
+            </div>
+
+            <div class="formGroup">
+                <label for="coverletter">Cover Letter</label><br>
+                <!-- textarea keywork using for the adding large text field -->
+                <textarea name="coverletter" id="coverletter" rows="10"
+                    placeholder="Explain what makes you suitable for the job" required></textarea>
+            </div>
+            <br>
+
+            <div>
+                <input type="checkbox" id="termscheckbox" required>
+                <label for="terms" id="terms">I agree to the terms and conditions</label>
+            </div>
+            <br>
+            <div>
+                <input type="submit" id="submit" name="Submit Application" value="Submit Application">
+            </div>
+
+        </form>
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------- -->
+    <br>
+    <br>
+    <br>
+    <!-- create a main div for the footer area -->
+    <div id="footerArea">
+        <div id="footerDiv">
+
+            <ol id="footerLinks">
+                <li><a href="https://www.udemy.com" target="_blank">Courses</a></li>
+                <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+                <li><a href="https://www.udemy.com" target="_blank">Programs</a></li>
+            </ol>
+
+            <p id="copyright">© 2025 , Zion Web Solutions
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>
